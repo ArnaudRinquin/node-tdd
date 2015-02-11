@@ -4,8 +4,8 @@
   "description": "Empty node project ready for any TDD",
   "main": "index.coffee",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script/register",
-    "dev": "mocha --compilers coffee:coffee-script/register -w",
+    "test": "mocha --compilers coffee:coffee-script/register **/*.test.coffee",
+    "dev": "mocha --compilers coffee:coffee-script/register **/*.test.coffee -w",
     "start": "coffee index.coffee"
   },
   "keywords": [
