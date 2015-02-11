@@ -5,7 +5,8 @@
   "main": "index.coffee",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script/register",
-    "dev": "mocha --compilers coffee:coffee-script/register -w"
+    "dev": "mocha --compilers coffee:coffee-script/register -w",
+    "start": "coffee index.coffee"
   },
   "keywords": [
     "tdd"
@@ -16,9 +17,15 @@
   },
   "author": "Arnaud Rinquin",
   "license": "MIT",
+  "dependencies": {
+    "coffee-script": "^1.9.0",
+    "dotenv": "^0.5.1",
+    "lodash": "^3.1.0",
+    "mongoose": "^3.8.23"
+  },
   "devDependencies": {
     "chai": "^1.10.0",
-    "coffee-script": "^1.9.0",
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2"
   }
 }
