@@ -1,3 +1,3 @@
-module.exports =
-  shout: (str) -> str.toUpperCase()
-  whisper: (str) -> str.toLowerCase()
+app = require './app'
+
+app.listen(process.env.PORT || 3000)

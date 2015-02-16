@@ -4,8 +4,9 @@
   "description": "Empty node project ready for any TDD",
   "main": "index.coffee",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script/register",
-    "dev": "mocha --compilers coffee:coffee-script/register -w"
+    "test": "mocha --compilers coffee:coffee-script/register **/*.test.coffee",
+    "dev": "mocha --compilers coffee:coffee-script/register **/*.test.coffee -w",
+    "start": "coffee index.coffee"
   },
   "keywords": [
     "tdd"
@@ -19,6 +20,10 @@
   "devDependencies": {
     "chai": "^1.10.0",
     "coffee-script": "^1.9.0",
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "supertest": "^0.15.0"
+  },
+  "dependencies": {
+    "express": "^4.11.2"
   }
 }
