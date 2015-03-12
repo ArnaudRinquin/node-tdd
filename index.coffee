@@ -1,3 +1,6 @@
+noOp = (obj) -> obj
+
 module.exports =
-  shout: (str) -> str.toUpperCase()
-  whisper: (str) -> str.toLowerCase()
+  mapObject: (obj = {}, fn = noOp, context) ->
+    Object.keys(obj).map (key) ->
+      fn.call(context, obj[key])
